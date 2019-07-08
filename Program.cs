@@ -1,12 +1,23 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace randomNumbers
 {
-    class Program
+  class Program
+  {
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
-        }
+      Random random = new Random();
+      var numbers = new List<int>() {
+                random.Next(6),
+                random.Next(6),
+                random.Next(6),
+                random.Next(6),
+                random.Next(6),
+                random.Next(6)
+            };
+
+
     }
+  }
 }
