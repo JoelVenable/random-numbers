@@ -17,7 +17,11 @@ namespace randomNumbers
                 random.Next(6)
             };
 
-
+      for (int i = 0; i < numbers.Count; i++)
+      {
+        Boolean doesContain = numbers.Contains(i);
+        Console.WriteLine($"numbers list {(doesContain ? "contains" : "does not contain")} {i}");
+      }
     }
   }
 }
